@@ -1,0 +1,130 @@
+Abu Antor 
+CISC 3140 Spring 2020
+Assignment 5 - Linux Terminal Command Practice
+Professor: Katherine Chuang
+
+Description
+1. Filter 1 column from a CSV file. Extract out the artist names from the CSV file that can be downloaded from the Spotify Charts website (https://spotifycharts.com/regional). Ensure that the artist names are unique and sorted. Retain the header as the top of the file.
+
+To do this problem in terminal I had to download the file from the Spotify and saved as ListOfArtist.csv in my document. There were very limited reference i found out. So, this is what I did in terminal to achieve this goal.
+  
+Antors-Desktop:~ antor$ cd desktop
+Antors-Desktop:~ antor$ ls
+  Assignement1 report.docx		ListOfArtist.csv
+Then I used the Cat command for get access to the CSV file by using : "cat ListOfArtist.csv". Then i use the command cat  "sort artist.csv" to sort the file to alapabethic order. Finally, I used "sort -u myfile.csv -o myfile.csv" command to sort only the unique value.
+
+
+24kGoldn
+"Ali Gatie"
+ANNA
+"arsy Widianto"
+Artist
+"Arizona Zervas" 
+Ashe
+"Bad Bunny"
+"Billie Eilish" 
+Breland
+Blinding Lights	
+"Brent Faiyaz"
+"Cookie Kawaii"
+Circles	
+"Doja Cat"
+DripReport
+Dance Monkey
+"Dua Lipa"
+Don't Start Now	
+EVERGLOW
+everything I wanted
+Falling
+Fasma
+"Future" 
+Hindia
+Ignorantes
+Intentions (feat. Quavo)
+"Justin Bieber" 
+"Jack Harlow"
+"KAROL G"
+La Santa 
+"Lady Gaga" 
+La Dif√≠cil
+"Lewis Capald"
+Life Is Good (feat. Drake)
+"Lil Kapow"
+Mahen
+"Maroon 5"
+MASA
+"Make Towers"
+Memories	
+Murda
+No Time To Die
+Pero Ya No
+"Post Malone" 
+ROXANNE	
+"Ricch" 
+Say So
+Si Veo a Tu Mam	
+Someone You Loved
+Stupid Love	
+"The Weeknd" 
+The Box	Roddy 
+"Trevor Daniel" 
+"Tones and I" 
+Tusa
+Vete		
+Yummy	
+
+
+Description
+2. Download a zip file from MovieLens (https://grouplens.org/datasets/movielens/latest/) using the command line interface (CLI) such as curl or wget and unzip the .zip file. It would be okay to choose the smallest (recent data) dataset.
+
+Antors-Desktop:~ antor$ unzip ml-latest-small.zip
+Archive: ml-latest-small.zip
+	 Creating: ml-latest-small/
+ 	inflating: ml-latest-small/links.csv
+	inflating: ml-latest-small/tags.csv
+	inflating: ml-latest-small/ratings.csx
+	inflating: ml-latest-small/README.txt
+	inflating: ml-latest-small/movies.csv
+Antors-Desktop:~ antor$ Clear
+
+
+Description
+3. Preview the first 12 lines of the movies.csv file and the last 4 lines of that same csv file.
+
+Antors-Desktop:~ antor$ head -n 12 movies.csv
+MovieID		Title		Genres
+1,Toy Story (1995),Adventure|Animation|Children|Comedy|Fantasy
+2,Jumanji (1995),Adventure|Children|Fantasy
+3,Grumpier Old Men (1995),Comedy|Romance
+4,Waiting to Exhale (1995),Comedy|Drama|Romance
+5,Father of the Bride Part II (1995),Comedy
+6,Heat (1995),Action|Crime|Thriller
+7,Sabrina (1995),Comedy|Romance
+8,Tom and Huck (1995),Adventure|Children
+9,Sudden Death (1995),Action
+(base) owners-MacBook-Air:ml-latest-small akashghosh$ head -n 13 movies.csv
+movieId,title,genres
+1,Toy Story (1995),Adventure|Animation|Children|Comedy|Fantasy
+2,Jumanji (1995),Adventure|Children|Fantasy
+3,Grumpier Old Men (1995),Comedy|Romance
+4,Waiting to Exhale (1995),Comedy|Drama|Romance
+5,Father of the Bride Part II (1995),Comedy
+6,Heat (1995),Action|Crime|Thriller
+7,Sabrina (1995),Comedy|Romance
+8,Tom and Huck (1995),Adventure|Children
+9,Sudden Death (1995),Action
+10,GoldenEye (1995),Action|Adventure|Thriller
+11,"American President, The (1995)",Comedy|Drama|Romance
+12,Dracula: Dead and Loving It (1995),Comedy|Horror
+
+For the last 4 lines use tails command as tail -4 movies.csv
+Antors-Desktop:~ antor$ head -n 2 text.csv
+Position,"Track Name", Artist, URL
+1, Vibe,"Cookie Kawaii",http://open.spotify.com/track/7btQ8AOjr6zXoGHEmxL5u5
+Antors-Desktop:~ antor$ tail -2 textTwo.csv
+49,"Make You Mine",PUBLIC,https://open.spotify.com/track/5iFwAOB2TFkPJk8sMlxP8g
+50,Falling,"Trevor Daniel",https://open.spotify.com/track/4TnjEawOeW0eKTKIEvJyCa
+Antors-MDesktop:~ antor$ 
+
+
+
